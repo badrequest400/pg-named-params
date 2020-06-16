@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc",
     "postinstall": "npm run build",
+    "prepublish": "npm run build",
     "lint": "eslint . --ext .ts"
   },
   "author": "",

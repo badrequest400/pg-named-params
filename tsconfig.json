@@ -15,7 +15,8 @@
     "moduleResolution": "node",
     "removeComments": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "declaration": true
   },
   "exclude": [
     "node_modules",
