@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --run",
     "coverage": "vitest run --coverage",
-    "build": "esbuild ./src/index.ts --bundle --platform=node --target=node12 --outfile=./dist/index.js",
+    "check": "tsc --noEmit",
+    "build": "esbuild ./src/index.ts --bundle --platform=node --target=node12 --outdir=dist",
+    "postbuild": "tsc --emitDeclarationOnly --outDir dist",
     "prepublish": "yarn build",
     "lint": "eslint . --ext .ts"
   },
