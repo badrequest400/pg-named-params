@@ -15,7 +15,7 @@ jobs:
       - name: Post merge test
         run:  yarn test
       - name: Type Check
-        run:  yarn check
+        run:  yarn type:check
       - name: Build
         run: yarn build
       - name: Publish

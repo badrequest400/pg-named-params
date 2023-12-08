@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest --run",
     "coverage": "vitest run --coverage",
-    "check": "tsc --noEmit",
+    "type:check": "tsc --noEmit",
     "build": "esbuild ./src/index.ts --bundle --platform=node --target=node12 --outdir=dist",
     "postbuild": "tsc --emitDeclarationOnly --outDir dist",
     "prepublish": "yarn build",

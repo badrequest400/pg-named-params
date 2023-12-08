@@ -13,6 +13,6 @@ jobs:
       - name: Install
         run: yarn
       - name: Type Check
-        run:  yarn check
+        run:  yarn type:check
       - name: Test
         run:  yarn test
