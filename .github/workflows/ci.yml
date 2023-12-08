@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: yarn
+      - name: Type Check
+        run:  yarn type:check
+      - name: Test
+        run:  yarn test

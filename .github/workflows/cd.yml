@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: yarn
+      - name: Post merge test
+        run:  yarn test
+      - name: Type Check
+        run:  yarn type:check
+      - name: Build
+        run: yarn build
+      - name: Publish
+        run: yarn publish
