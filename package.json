@@ -1,9 +1,17 @@
 {
-  "name": "pg-named-params",
-  "version": "1.0.0",
+  "name": "@badrequest400/pg-named-params",
   "description": "Parameterise queries for pg with named variables",
+  "version": "1.0.0",
+  "author": "Balazs Cseh",
+  "bugs": "https://github.com/badrequest400/pg-named-params/issues",
+  "repository": {
+    "url": "https://github.com/badrequest400/pg-named-params",
+    "type": "git"
+  },
+  "license": "MIT",
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "test": "vitest --run",
     "coverage": "vitest run --coverage",
@@ -13,8 +21,6 @@
     "prepublish": "yarn build",
     "lint": "eslint . --ext .ts"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",

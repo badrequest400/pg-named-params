@@ -6,7 +6,7 @@ Simple query builder function for pg that let's you use named parameters instead
 ## Installation
 
 ```bash
-npm i pg-named-params
+npm i @badrequest400/pg-named-params
 ```
 
 ## Usage
