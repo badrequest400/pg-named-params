@@ -22,3 +22,5 @@ export function buildQuery(queryText: string, variables: Variables): Result {
 };
 
 export default buildQuery;
+
+export const build = buildQuery;
