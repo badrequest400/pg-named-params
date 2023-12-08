@@ -1,6 +1,9 @@
 const extractRegex = new RegExp(/\$\w+/, 'g');
 
-export const buildQuery = (queryText: string, variables: { [key: string]: string | number }): [string, (string | number)[]?] => {
+type Variables = { [key: string]: string | number };
+type Result = [string, (string | number)[]?];
+
+export function buildQuery(queryText: string, variables: Variables): Result {
   if (!variables || Object.keys(variables).length === 0) return [queryText];
 
   const matches = queryText.match(extractRegex)
