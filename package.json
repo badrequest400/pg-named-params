@@ -1,7 +1,7 @@
 {
   "name": "@badrequest400/pg-named-params",
   "description": "Parameterise queries for pg with named variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Balazs Cseh",
   "bugs": "https://github.com/badrequest400/pg-named-params/issues",
   "repository": {
@@ -11,7 +11,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "scripts": {
     "test": "vitest --run",
     "coverage": "vitest run --coverage",

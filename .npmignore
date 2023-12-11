@@ -3,3 +3,7 @@ node_modules
 build.sh
 .gitignore
 tsconfig.json
+coverage
+.github
+.eslintrc
+.eslintignore
