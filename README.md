@@ -1,7 +1,7 @@
 
 # pg-named-params
 
-Simple query builder function for pg that let's you use named parameters instead of positional arguments to enhance readability.
+Simple query builder function for `pg` that let's you use named parameters instead of positional arguments to enhance readability.
 
 ## Installation
 
@@ -12,7 +12,9 @@ npm i @badrequest400/pg-named-params
 ## Usage
 
 ```js
-import { build } from 'pg-named-params';
+import { build } from '@badrequest400/pg-named-params';
+// or if not using ES modules
+// const { build } = require('@badrequest400/pg-named-params');
 
 const query = build(
   `SELECT * FROM users
@@ -26,10 +28,10 @@ const query = build(
   { name: 'John', age: 23, status: 'active', type: 'user', daysAgo: 7, organisationId: 1 }
 );
 
-pg.query(query);
+pg.query(query.text, query.values);
 ```
 
-Easier on the eyes than:
+Easier on the eyes than the normal `pg` API:
 
 ```js
 pg.query(
