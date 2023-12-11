@@ -1,6 +1,8 @@
 
 # pg-named-params
 
+![Main CD Badge](https://github.com/badrequest400/pg-named-params/actions/workflows/cd.yml/badge.svg)
+
 Simple query builder function for `pg` that let's you use named parameters instead of positional arguments to enhance readability.
 
 ## Installation
