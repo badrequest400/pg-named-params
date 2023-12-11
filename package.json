@@ -1,11 +1,11 @@
 {
   "name": "@badrequest400/pg-named-params",
   "description": "Parameterise queries for pg with named variables",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Balazs Cseh",
   "bugs": "https://github.com/badrequest400/pg-named-params/issues",
   "repository": {
-    "url": "https://github.com/badrequest400/pg-named-params",
+    "url": "git+https://github.com/badrequest400/pg-named-params.git",
     "type": "git"
   },
   "license": "MIT",
